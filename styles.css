@@ -273,6 +273,9 @@ footer {
 
 /* responsive styles */
 @media (max-width: 600px){
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
     /* header */
     header {
         flex-direction: column;
