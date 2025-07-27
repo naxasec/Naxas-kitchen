@@ -1,0 +1,386 @@
+/* General style */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: cursive;
+}
+
+
+/* CSS Variables */
+:root {
+	--primary: #20228b;
+	--accent: #e26834;
+	--background: #8999a8;
+	--hover: #b2dfe6;
+}
+
+/* header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Backgroung image slider */
+.slide {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-image: url('images/backgroundfood2.jpg'), url('images/backgroundfood3.jpg'), url('images/backgroundfood4.jpg'), url('images/backgroundfood5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: slideBackground 15s infinite linear;
+    
+}
+
+/* Background image overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation items display */
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+/* navigation items style */
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+/* nav items hover */
+.nav-items :hover {
+    color: #ff6b6b;
+    font-size: 1.2em;
+    background-color: none;
+}
+
+/* logo */
+.logo {
+    font-family: cursive;
+    padding: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* brand color */
+.brand {
+    color: var(--accent);
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+    animation: slideFromTop 2s ease-in-out;
+}
+
+/* hero section header */
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* hero section paragraph */
+.hero p {
+    font-size: 1.3em;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu button */
+.hero .menu-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 2s ease;
+    animation: fadeIn 2s ease-in-out;
+    text-decoration: none;
+}
+
+/* menu button hover */
+.hero .menu-btn:hover {
+    background-color: var(--hover);
+}
+
+/* menu section */
+.menubox {
+    background-image: url(images/background3.jpg);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px; 
+    display: grid;
+}
+
+/* food and plate container */
+.subflex {
+    display: flex;
+}
+
+/* food container */
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* plate container */
+.order-summary {
+    position: sticky;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    float: right;
+    width: 50vh;
+    height: fit-content;
+    max-height: max-content;
+}
+
+/* plate action buttons */
+.order-summary button {
+    margin: 10px 5px 0 0;
+    padding: 5px 10px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* plate action buttons hover */
+.order-summary button:hover {
+    background-color: var(--hover);
+}
+
+/* food container */
+.card {
+    background-color: rgba(29, 32, 28, 0.9);
+    overflow: hidden;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+/* food name */
+.food {
+    font-size: 2.5em;
+    color: wheat;
+}
+
+/* menu text */
+.menu {
+    color: white;
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* food picture */
+.itempic {
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* add to plate button */
+.card .addtoplate {
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* add to plate hover */
+.card .addtoplate:hover {
+    background-color: var(--hover);
+    font-size: 1em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* food hover */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* footer */
+footer {
+    justify-items: center;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    background-color: rgba(0,0,0,0.8);
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* socials */
+.socials a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    color: var(--accent);
+}
+
+/* responsive styles */
+@media (max-width: 600px){
+    /* header */
+    header {
+        flex-direction: column;
+    }
+
+    /* logo */
+    .logo {
+        align-self: start;
+    }
+
+    /* navigation items */
+    .nav-items {
+        flex-direction: column;
+        gap:10px;
+        align-items: start;
+        align-self: self-start;
+    }
+
+    /* food and plate container */
+    .subflex{
+        flex-direction: column;
+    }
+
+    /* food container */
+    .flex-container{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        min-height: fit-content;
+    }
+
+    /* plate container */
+    .order-summary {
+        position: fixed;
+        top: 100px; 
+        right: 20px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.15);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        backdrop-filter: blur(5px);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    /* food */
+    .card {
+        width: 300px;
+    }
+
+    /* menu section */
+    .menubox {
+        display: grid;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        overflow: auto;
+    }
+
+    /* menu text */
+    .menu {
+        align-self: center;
+        text-align: center;
+        font-family: cursive;
+    }
+    
+}
+
+/* hero section slide animation */
+@keyframes slideFromTop {
+
+    from {
+        transform: translateY(-100%);
+    } 
+    to {
+        transform: translateY(0);
+    }
+    
+}
+
+/* menu button fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* background image slide effect */
+@keyframes slideBackground {
+  0% {
+    background-image: url('images/backgroundfood2.jpg');
+  }
+  33% {
+    background-image: url('images/backgroundfood3.jpg');
+  }
+  66% {
+    background-image: url('images/backgroundfood4.jpg');
+  }
+  100% {
+    background-image: url('images/backgroundfood5.jpg');
+  }
+}
+/* end of styles */

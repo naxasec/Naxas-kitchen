@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Naxa's Kitchen</title>
+</head>
+<body>
+    <!--background image slider container-->
+    <div class="slide">
+        <!--background image overlay container to make it faded-->
+        <div class="overlay">
+            <!--header containing logo and navigation-->
+            <header>
+                <div class="logo brand" >
+                    <h1>NAXA'S KITCHEN</h1>
+                </div>
+                <nav class="nav-items">
+                    <a href="#home">Home</a>
+                    <a href="#aboutus">About</a>
+                    <a href="#socials">Contact</a>
+                </nav>
+            </header>
+            <!--hero section-->
+            <section class="hero">
+                <h1>
+                    Welcome to<br> <span class="brand">NAXA'S KITCHEN</span>
+                </h1>
+                <p>
+                    ...where every meal is a delight!!!
+                </p>
+                <p>Satisfy your tastebuds with our savory dishes<br> Kindly place your order now!!! </p>
+                <a class="menu-btn" href="#menu">
+                    MENU
+                </a>
+            </section>  
+        <div>
+	</div>
+    <!--menu block-->
+    <div class="menubox">
+        <div id="menu" class="menu">MENU</div><br>
+        <div class="subflex">       	    
+            <!--list of food-->
+            <div class="flex-container">            
+                <!--Abacha-->
+                <div class="card">
+                    <img class="itempic" src="images/abacha.jpg">
+                    <h2 class="food">Abacha</h2>
+                    <p>One of the south-east finest dishes. Abacha is made from dried, shredded cassava.<br> At Naxa's kitchen, we don't just serve your regular
+                        Abacha. This dish is garnished with Fish, Meat, Kpomo, spices and vegetables, and even more.
+                    </p><br>
+                    <p>PRICE; ₦4,000</p><br>
+                    <button class="addtoplate" type="button">Add to plate</button>
+                </div>
+                <!--Achicha-->
+                <div class="card">
+                    <img class="itempic" src="images/achicha.jpg">
+                    <h2 class="food">Achicha</h2>
+                    <p>This is no regular dish... Achicha is one of Enugu's most delicious meals.<br>Made with Pigeon pea as the main ingredient, Achicha is rich in 
+                        garnishment and great taste.
+                    </p><br>
+                    <p>PRICE; ₦6,000</p><br>
+                    <button class="addtoplate" type="button">Add to plate</button>
+                </div>
+                <!--Jollof-->
+                <div class="card">
+                    <img class="itempic" src="images/rice and chicken.jpg">
+                    <h2 class="food">Jollof Rice</h2>
+                    <p>The Internationally recognized dish which is claimed to be native to West-Africa. Served with plantain on the side, this dish is sure to satisfy 
+                        your tastebuds.
+                    </p><br>
+                    <p>PRICE; ₦4,000</p><br>
+                    <button class="addtoplate" type="button">Add to plate</button>
+                </div>
+                <!--Egusi-->
+                <div class="card">
+                    <img class="itempic" src="images/akpu and egusi.jpg">
+                    <h2 class="food">Akpu and Egusi soup</h2>
+                    <p>This is as local as it can get. As famous as it is, this dish is generally preferred to be eaten using bare hands. sounds local right?<br>
+                        Egusi is south-east's most famous swallow and it sure doesn't disappoint when it comes to taste.
+                    </p><br>
+                    <p>PRICE; ₦4,000</p><br>
+                    <button class="addtoplate" type="button">Add to plate</button>
+                </div>
+                <!--Ofeakwu-->
+                <div class="card">
+                    <img class="itempic" src="images/rice and ofe-akwu.jpg">
+                    <h2 class="food">Rice and ofe-akwu</h2>
+                    <p>This is Rice but with a local stew. This stew is made from palm fruit and is well garnished with meat. Sometimes it seems like meat is the main ingredient.<br>
+                        This is one meal that can't go wrong no matter th weather.
+                    </p><br>
+                    <p>PRICE; ₦5,000</p><br>
+                    <button class="addtoplate" type="button">Add to plate</button>
+                </div>
+                <!--My special-->
+                <div class="card">
+                    <img class="itempic" src="images/special.jpg">
+                    <h2 class="food">Naxa's special</h2>
+                    <p>Finding it hard to make a decision? Naxa's special has got you covered.<br>
+                        It's special! It's Delicious! It's Anonymous!<br>Only at Naxa's kitchen!!!<br>
+                        Order now and get a special meal made only at Naxa's kitchen. It's our special receipe and it never misses. 
+                    </p><br>
+                    <p>PRICE; ₦10,000</p><br>
+                    <button class="addtoplate" type="button">Add to plate</button>
+                </div>                 
+            </div>
+            <!--Plate container-->
+            <div id="order-summary" class="order-summary">
+                <h2>Your Plate</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: ₦<span id="total-cost">0</span></p>
+                <button id="submit-order">Submit Order</button>
+                <button id="print-order">Print Order</button>
+                <div id="loading-spinner" style="display:none;">Submitting...</div>
+            </div>
+        </div>
+    <!--footer-->   
+	<footer>
+        <!--about-->
+		<div id="aboutus" class="aboutus">
+			<h3>About Us</h3>
+			<p>Naxa's kitchen is an online kitchen where you can order the best popular local dishes in the south-east.<br>
+            We provide you with the best savory dishes that is guaranteed to satisfy you.<br> Place your order now and enjoy!!! 
+            </p>
+		</div>
+        <!--contact-->
+		<div class="contactus">
+			<h3>Contact Us</h3>
+			<p>Email: naxaskitchen@example.com</p>
+			<p>phone: +23412345678</p>
+			<p>Address: 123 road, enugu, Nigeria</p>
+		</div>
+        <!--social media-->
+		<div id="socials" class="socials">
+			<h3>Follow Us</h3>
+			<a href="https://facebook.com" target="_blank">Facebook</a>
+			<a href="https://instagram.com" target="_blank">Instagram</a>
+			<a href="https://x.com" target="_blank">X(Twitter)</a>
+			<a href="https://youtube.com" target="_blank">Youtube</a>
+		</div>
+        <!--copyright-->
+		<div>
+			<p>&copy; 2025 Naxa's kitchen. All rigts reserved.</p>
+		</div>
+	</footer>
+    </div>
+    <!--script-->
+    <script	src="script.js"></script>
+</body>
+</html>
